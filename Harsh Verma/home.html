@@ -17,8 +17,46 @@
       rel="stylesheet"
     />
 
-    <!--External CSS-->
-    <link rel="stylesheet" href="./css/style.css" />
+    <!--Custom CSS-->
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .homepagebg{
+            background: url('./img/homebgimg.png') no-repeat center center/cover;
+            background-color: #DAF7A6 ;
+            position: relative;
+            background-position: 20% 10%;
+        }
+
+        .homepagebgmd{
+            background: url('./img/homebgimg.png') no-repeat center center/cover;
+            background-color: #DAF7A6 ;
+            position: relative;
+            background-position: 0% 0%;
+        }
+
+        .homepagebglg{
+            background: url('./img/homebgimg.png') no-repeat center center/cover;
+            background-color: #DAF7A6 ;
+            position: relative;
+            background-position: -20% 0%;
+        }
+
+        .homepagebgxl{
+            background: url('./img/homebgimg.png') no-repeat center center/cover;
+            background-color: #DAF7A6 ;
+            position: relative;
+            background-position: -130% 0%;
+        }
+
+        .homepagebgxxl{
+            background: url('./img/homebgimg.png') no-repeat center center/cover;
+            background-color: #DAF7A6 ;
+            position: relative;
+            background-position: -170% 0%;
+        }
+
+      }
+    </style>
 
     <!--Tailwind config-->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -30,6 +68,7 @@
             md: "768px",
             lg: "1024px",
             xl: "1440px",
+            xxl:"1536px"
           },
           extend: {
             fontFamily: {
@@ -38,8 +77,8 @@
             },
             backgroundImage: {
               homepageimg:
-                "url('./img/106-1060448_earth-svg-download-earth-svg-doodle-of-the-earth-removebg-preview.png')",
-              facultybgimg: "url('./img/abstractleaf-real_adobe_express.svg')",
+                "url('./img/106-1060448_earth-svg-download-earth-svg-doodle-of-the-earth-removebg-preview1.png')",
+              facultybgimg: "url('./img/abstractleaf-real_adobe_express1.svg')",
             },
             colors: {
               limegreen: "#DAF7A6",
@@ -63,7 +102,7 @@
       <div class="container flex flex-col items-center max-w-full">
 
           <!--first half of the home page-->
-          <div id=""class="bg-limegreen flex flex-col items-center bg-homepageimg bg-no-repeat bg-cover w-screen">
+          <div id=""class="bg-limegreen flex flex-col items-center w-screen homepagebg md:homepagebgmd lg:homepagebglg xl:homepagebgxl xxl:homepagebgxxl">
 
             <!-- Biosphere Logo-->
             <div class="logo">
@@ -140,6 +179,7 @@
             </div>
           </div>
         </div>
+      </div>
       </div>
     </section>
 
