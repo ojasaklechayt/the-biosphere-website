@@ -31,6 +31,7 @@
             md: "768px",
             lg: "1024px",
             xl: "1440px",
+            xxl:"1536px"
           },
           extend: {
             fontFamily: {
@@ -41,7 +42,7 @@
               homepageimg:
                 "url('./img/106-1060448_earth-svg-download-earth-svg-doodle-of-the-earth-removebg-preview.png')",
               facultybgimg: "url('./img/abstractleaf-real_adobe_express.svg')",
-              eventbgimg:"url('./img/1158178_1959-removebg-preview_adobe_express.png')"
+              eventbgimg:"url('./img/events_page/eventbgimg.png')"
             },
             colors: {
               limegreen: "#DAF7A6",
@@ -51,24 +52,51 @@
         },
       };
     </script>
+
+      <!--Custom CSS-->
+      <style type="text/tailwindcss">
+        @layer utilities {
+          .eventpagebg{
+             position:absolute;
+             top:50px;
+          }
+          
+          .right{
+             position: relative;
+             left:0px;
+          }
+
+          .left{
+             position: relative;
+             right:70px;
+          }
+
+        }
+      </style>
+
   </head>
   <body>
     <!--Navbar-->
     <nav></nav>
 
     <!--Events Section-->
-    <section id="events">
+    <section id="events ">
+      <div class="flex flex-col bg-lightyellow">
+        <div class="right flex place-content-end"><img src="./img/events_page/treeLeft.png" alt="" class="bg-lightyellow xl:w-[600px]"></div>
+        <div class="left flex place-content-start"><img src="./img/events_page/treeRight.png" alt="" class="bg-lightyellow xl:w-[600px]"></div>
+        <div class="right flex place-content-end"><img src="./img/events_page/treeLeft.png" alt="" class="bg-lightyellow xl:w-[600px]"></div>       
+      </div>
       <!--main container-->
-      <div class="flex flex-col items-center bg-lightyellow bg-eventbgimg">
+      <div class="flex flex-col items-center eventpagebg">
 
         <!--events heading-->
-        <div class="text-xl my-5 font-sanchez md:text-3xl lg:text-4xl">Events</div>
+        <div class="text-xl my-2 font-sanchez md:text-3xl lg:text-4xl ">Events</div>
 
         <!--events container-->
-        <div class="container flex flex-col my-5">
+        <div class="container flex flex-col my-2">
 
           <!--event1 container-->
-          <div class="flex flex-col items-center my-5 bg-gray-100 mx-10 rounded-xl bg-opacity-50">
+          <div class="flex flex-col items-center my-5 bg-gray-100 mx-10 rounded-xl bg-opacity-50 lg:mx-20">
 
             <!--event 1 heading-->
             <div class="font-sanchez text-sm my-3 md:text-lg">Event 1</div>
@@ -94,7 +122,7 @@
           </div>
 
           <!--event 2 container-->
-          <div class="flex flex-col items-center my-5 bg-gray-100 mx-10 rounded-xl bg-opacity-50">
+          <div class="flex flex-col items-center my-5 bg-gray-100 mx-10 rounded-xl bg-opacity-50 lg:mx-20">
             <!--event 2 heading-->
             <div class="font-sanchez text-sm my-3 md:text-lg">Event 2</div>
 
@@ -120,7 +148,7 @@
           </div>
 
           <!--event 3 container-->
-          <div class="flex flex-col items-center my-5 bg-gray-100 mx-10 rounded-xl bg-opacity-50">
+          <div class="flex flex-col items-center my-5 bg-gray-100 mx-10 rounded-xl bg-opacity-50 lg:mx-20">
             <!--event 3 heading-->
             <div class="font-sanchez text-sm my-3 md:text-lg">Event 3</div>
 
