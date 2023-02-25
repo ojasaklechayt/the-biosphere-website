@@ -28,7 +28,9 @@
                     colors: {
                         lightViolet: 'hsl(211, 61%, 75%)',
                         darkViolet: 'hsl(211, 61%, 35%)',
-                        cardColor: 'rgba(255, 255, 255, 0.60)'
+                        cardColor: 'rgba(255, 255, 255, 0.60)',
+                        limegreen: "#DAF7A6",
+                        lightyellow:"#ECF7A6"
                     },
                 },
             },
@@ -39,14 +41,68 @@
 </head>
 
 <body>
-    <nav class="relative p-4 bg-lightViolet">
-        <div class="flex gap-x-20 justify-center p-3 m-5 text-xl">
-            <a href="#" class="hover:text-darkViolet">Home</a>
-            <a href="#" class="hover:text-darkViolet">Events</a>
-            <a href="#" class="hover:text-darkViolet">Our Team</a>
-            <a href="#" class="hover:text-darkViolet">Gallery</a>
-        </div>
-    </nav>
+    <!-- Navbar goes here -->
+	<nav class="bg-limegreen">
+		<div class="h-20 mx-auto px-4 flex justify-start items-center md:justify-center">
+			<div class="flex space-x-7">
+
+
+				<!-- Primary Navbar items -->
+
+				<div class="hidden flex md:flex md:flex-grow flex-row justify-center space-x-12 text-xl lg:space-x-20 lg:text-2xl">
+					<a href=""
+						class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300">Home</a>
+					<a href=""
+						class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300">Events</a>
+					<a href=""
+						class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300">Our
+						Team</a>
+					<a href=""
+						class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300">Gallery</a>
+				</div>
+
+			</div>
+
+
+			<!-- Mobile menu button -->
+			<div class="md:hidden flex items-center">
+				<button class="outline-none mobile-menu-button">
+					<svg class=" w-6 h-6 text-gray-500 hover:text-green-500 " x-show="!showMenu" fill="none"
+						stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+						stroke="currentColor">
+						<path d="M4 6h16M4 12h16M4 18h16"></path>
+					</svg>
+				</button>
+			</div>
+		</div>
+		</div>
+		<!-- mobile menu -->
+		<div class="hidden mobile-menu">
+			<ul class="flex flex-col space-y-5">
+				<li class="active"><a href="#"
+						class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300">Home</a>
+				</li>
+				<li><a href="#"
+						class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300">Events</a>
+				</li>
+				<li><a href="#"
+						class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300">Our
+						Team</a></li>
+				<li><a href="#"
+						class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300">Gallery</a>
+				</li>
+			</ul>
+		</div>
+		<script>
+			const btn = document.querySelector("button.mobile-menu-button");
+			const menu = document.querySelector(".mobile-menu");
+
+			btn.addEventListener("click", () => {
+				menu.classList.toggle("hidden");
+			});
+		</script>
+	</nav>
+
     <div class="bg-lightViolet bg-waves">
         <div class="flex text-4xl justify-center p-2 pb-10">
             Website Developed By
@@ -117,6 +173,32 @@
                 </div>
             </div>
         </div>
-    </div </body>
+    </div>
+
+    <footer class="p-4 bg-white  shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800" style="background-color: #DAF7A6;">
+        <span class="text-sm text-black-500 sm:text-left dark:text-black-400 font-Sanchez font-medium"> CONTACT US<br>
+            Lenin Vasan (President) : +91 9876543210<br>
+    
+            Shubreeta Chatterjee (Vice President) : +91 9876543210<br>
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-medium"></i>
+            <i class="fa-brands fa-youtube"></i>
+    
+    
+        </span>
+        <ul class="flex flex-wrap text-sm text-black-500 sm:text-right dark:text-black-400 font-Sanchez font-medium">
+            VIT Chennai<br>
+            Vandalur - Kelambakkam Road Chennai <br>
+            600 127 044 3993 1555
+    </footer>
+    <div class="p-4 bg-gray shadow dark:bg-gray-800" style="background-color: #b8f645;">
+        <p class="text-sm text-black-500 sm:text-center dark:text-black-400 font-Sanchez font-medium ">
+            <a href="#">Developed by Biosphere Tech</a>
+        </p>
+    </div>
+
+</body>
 
 </html>
