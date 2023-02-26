@@ -1,274 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sanchez&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./Home_and_Events/css/style.css">
 
-    <!--Custom CSS-->
-    <style type="text/tailwindcss">
-      @layer utilities {
+  <!-- CDN -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!--Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Sanchez&display=swap" rel="stylesheet" />
+
+  <!--Custom CSS-->
+  <style type="text/tailwindcss">
+    @layer utilities {
         .homepagebg{
-            background: url('./Home_and_Events/img/homebgimg.png') no-repeat center center/cover;
+            background: url('./Home_and_Events/img/cutearth-removebg-preview.png') no-repeat center center/cover;
             background-color: #DAF7A6 ;
             position: relative;
-            background-position: 20% 10%;
+            background-size: cover;
+            
         }
 
         .homepagebgmd{
-            background: url('./Home_and_Events/img/homebgimg.png') no-repeat center center/cover;
+            background: url('./Home_and_Events/img/cutearth-removebg-preview.png') no-repeat center center/cover;
             background-color: #DAF7A6 ;
             position: relative;
-            background-position: 0% 0%;
+            background-size: cover;
+           
         }
 
         .homepagebglg{
-            background: url('./Home_and_Events/img/homebgimg.png') no-repeat center center/cover;
-            background-color: #DAF7A6 ;
+            background: url('./Home_and_Events/img/cutearth-removebg-preview.png') no-repeat center center/cover;
+            background-color: #d4e8b0 ;
             position: relative;
-            background-position: -20% 0%;
+            background-size: cover;
+            
         }
 
         .homepagebgxl{
-            background: url('./Home_and_Events/img/homebgimg.png') no-repeat center center/cover;
+            background: url('./Home_and_Events/img/cutearth-removebg-preview.png') no-repeat center center/cover;
             background-color: #DAF7A6 ;
             position: relative;
-            background-position: -130% 0%;
+            background-size: cover;
+           
         }
 
         .homepagebgxxl{
-            background: url('./Home_and_Events/img/homebgimg.png') no-repeat center center/cover;
+            background: url('./Home_and_Events/img/cutearth-removebg-preview.png') no-repeat center center/cover;
             background-color: #DAF7A6 ;
             position: relative;
-            background-position: -170% 0%;
+            background-size: cover;
         }
-
-      
 
       }
     </style>
 
-    <!--Tailwind config-->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          screens: {
-            sm: "480px",
-            md: "768px",
-            lg: "1024px",
-            xl: "1440px",
-            xxl:"1536px"
+  <!--Tailwind config-->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        screens: {
+          sm: "480px",
+          md: "768px",
+          lg: "1024px",
+          xl: "1440px",
+          xxl: "1536px"
+        },
+        backgroundSize: {
+          'auto': 'auto',
+          'cover': 'cover',
+          'contain': 'contain',
+          '50%': '50%',
+          '16': '4rem',
+        },
+        extend: {
+          fontFamily: {
+            poppins: ["Poppins"],
+            sanchez: ["Sanchez"],
           },
-          extend: {
-            fontFamily: {
-              poppins: ["Poppins"],
-              sanchez: ["Sanchez"],
-            },
-            backgroundImage: {
-              homepageimg:
-                "url('../Home_and_Events/img/106-1060448_earth-svg-download-earth-svg-doodle-of-the-earth-removebg-preview1.png')",
-              facultybgimg: "url('./Home_and_Events/img/abstractleaf-real_adobe_express1.svg')",
-            },
-            colors: {
-              limegreen: "#DAF7A6",
-              lightyellow:"#ECF7A6",
-              footer1:"#DAF7A6",
-              footer2:"#C6E78B"
-            },
+          backgroundImage: {
+            homepageimg:
+              "url('./Home_and_Events/img/106-1060448_earth-svg-download-earth-svg-doodle-of-the-earth-removebg-preview1.png')",
+            facultybgimg: "url('./Home_and_Events/img/abstractleaf-real_adobe_express1.svg')",
+          },
+          colors: {
+            limegreen: "#DAF7A6",
+            lightyellow: "#ECF7A6",
+            footer1: "#DAF7A6",
+            footer2: "#C6E78B",
+            bgcol: "#d4e8b0"
           },
         },
-      };
+      },
+    };
+  </script>
+
+  <title>The Biosphere Website</title>
+</head>
+
+<body>
+  <!-- Navbar goes here -->
+  <nav class="bg-limegreen sticky top-0 w-full shadow-xl	">
+    <div class="h-20 mx-auto px-4 flex justify-start items-center md:justify-center">
+      <div class="flex space-x-7">
+
+
+        <!-- Primary Navbar items -->
+
+        <div
+          class="hidden flex md:flex md:flex-grow flex-row justify-center space-x-12 text-base lg:space-x-20 lg:text-2xl">
+          <a href="./index.html"
+            class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300 text-lg">Home</a>
+          <a href="./Home_and_Events/events.html"
+            class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300 text-lg">Events</a>
+          <a href="./Our team/index.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300 text-lg">Our
+            Team</a>
+          <a href="./Gallery/index.html"
+            class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300 text-lg">Gallery</a>
+        </div>
+
+      </div>
+
+
+      <!-- Mobile menu button -->
+      <div class="md:hidden flex items-center">
+        <button class="outline-none mobile-menu-button">
+          <svg class=" w-6 h-6 text-gray-500 hover:text-green-500 " x-show="!showMenu" fill="none"
+            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+            <path d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    </div>
+    <!-- mobile menu -->
+    <div class="hidden mobile-menu">
+      <ul class="flex flex-col space-y-5">
+        <li class="active"><a href="./index.html"
+            class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300">Home</a>
+        </li>
+        <li><a href="./Home_and_Events/events.html"
+            class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300">Events</a>
+        </li>
+        <li><a href="./Our team/index.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300">Our
+            Team</a></li>
+        <li><a href="./Gallery/index.html"
+            class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300">Gallery</a>
+        </li>
+      </ul>
+    </div>
+    <script>
+      const btn = document.querySelector("button.mobile-menu-button");
+      const menu = document.querySelector(".mobile-menu");
+
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
     </script>
+  </nav>
 
-    <title>The Biosphere Website</title>
-  </head>
-  <body>
-    <!-- Navbar goes here -->
-	<nav class="bg-limegreen">
-		<div class="h-20 mx-auto px-4 flex justify-start items-center md:justify-center">
-			<div class="flex space-x-7">
+  <!--Home Section-->
+  <section id="home">
 
+    <!--Container of the home page-->
+    <div class="container flex flex-col items-center max-w-full">
 
-				<!-- Primary Navbar items -->
+      <!--first half of the home page-->
+      <div id="" class="bg-bgcol flex flex-col items-center w-screen ">
 
-				<div class="hidden flex md:flex md:flex-grow flex-row justify-center space-x-12 text-xl lg:space-x-20 lg:text-2xl">
-					<a href="./index.html"
-						class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300">Home</a>
-					<a href="./Home_and_Events/events.html"
-						class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300">Events</a>
-					<a href="./Our team/index.html"
-						class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300">Our
-						Team</a>
-					<a href="./Gallery/index.html"
-						class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300">Gallery</a>
-				</div>
+        <!-- Biosphere Logo-->
+        <div class="py-7">
+          <img src="./Home_and_Events/img/106-1060448_earth-svg-download-earth-svg-doodle-of-the-earth-removebg-preview (1).png" alt="" class="w-40 rounded-full bg-contain pt-3">
+        </div>
 
-			</div>
+        <!--tagline-->
+        <div class="my-3 font-poppins text-xs font-medium md:text-2xl py-5">
+          195 Countries | 8 Billion People | 1 Planet
+        </div>
 
+        <!-- main tagline-->
+        <div class="flex text-1xl py-3 font-poppins text-center mb-10 md:mx-28 md:text-4xl">
+          One Planet, One conscious decision to live in harmony
+        </div>
 
-			<!-- Mobile menu button -->
-			<div class="md:hidden flex items-center">
-				<button class="outline-none mobile-menu-button">
-					<svg class=" w-6 h-6 text-gray-500 hover:text-green-500 " x-show="!showMenu" fill="none"
-						stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
-						stroke="currentColor">
-						<path d="M4 6h16M4 12h16M4 18h16"></path>
-					</svg>
-				</button>
-			</div>
-		</div>
-		</div>
-		<!-- mobile menu -->
-		<div class="hidden mobile-menu">
-			<ul class="flex flex-col space-y-5">
-				<li class="active"><a href="./index.html"
-						class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300">Home</a>
-				</li>
-				<li><a href="./Home_and_Events/events.html"
-						class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300">Events</a>
-				</li>
-				<li><a href="./Our team/index.html"
-						class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300">Our
-						Team</a></li>
-				<li><a href="./Gallery/index.html"
-						class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300">Gallery</a>
-				</li>
-			</ul>
-		</div>
-		<script>
-			const btn = document.querySelector("button.mobile-menu-button");
-			const menu = document.querySelector(".mobile-menu");
+        <!--about us-->
+        <div class="flex flex-col items-center my-10 bg-gray-100 mx-4 rounded-xl bg-opacity-70 md:mx-10">
+          <!--About us heading-->
+          <div class="font-sanchez my-10 md:text-xl lg:text-3xl">About Us</div>
 
-			btn.addEventListener("click", () => {
-				menu.classList.toggle("hidden");
-			});
-		</script>
-	</nav>
-
-    <!--Home Section-->
-    <section id="home">
-      
-      <!--Container of the home page-->
-      <div class="container flex flex-col items-center max-w-full">
-
-          <!--first half of the home page-->
-          <div id=""class="bg-limegreen flex flex-col items-center w-screen homepagebg md:homepagebgmd lg:homepagebglg xl:homepagebgxl xxl:homepagebgxxl">
-
-            <!-- Biosphere Logo-->
-            <div class="logo">
-              <img src="./Home_and_Events/img/106-1060448_earth-svg-download-earth-svg-doodle-of-the-earth-removebg-preview1.png" alt="" class="w-50 rounded-full bg-contain">
+          <!--group photo and content-->
+          <div class="container flex flex-col-reverse items-center">
+            <!--content-->
+            <div class="flex text-[7px] mr-0.5 md:text-sm lg:text-xl">
+              <p class="px-7 py-6">
+                We created our club with the vision to create awareness
+                among people and make impact by realizing how real the
+                global warming and climate changes are. Join us to build a
+                sustainable environment and leave behind a better place for
+                the future generations. Encouraging active participation and
+                spreading hope that small changes do matter. Respecting,
+                Observing and Understanding of Plants, Animals, Places and
+                Culture. Getting knowledge and finding new ways to heal the
+                planet.
+              </p>
             </div>
 
-            <!--tagline-->
-            <div class="my-3 font-poppins text-xs font-medium md:text-xl">
-              195 Countries | 8 Billion People | 1 Planet
-            </div>
-
-            <!-- main tagline-->
-            <div class="flex text-1xl font-poppins text-center mb-10 md:mx-28 md:text-3xl">
-                One Planet, One conscious decision to live in harmony
-            </div>
-
-            <!--about us-->
-            <div class="flex flex-col items-center my-10 bg-gray-100 mx-4 rounded-xl bg-opacity-70 md:mx-10">
-              <!--About us heading-->
-              <div class="font-sanchez mt-3 md:text-xl lg:text-3xl">About Us</div>
-
-              <!--group photo and content-->
-              <div class="container flex flex-row">
-                <!--content-->
-                <div class="flex text-[7px] mr-0.5 md:text-sm lg:text-xl">
-                  <p class="p-3">
-                    We created our club with the vision to create awareness
-                    among people and make impact by realizing how real the
-                    global warming and climate changes are. Join us to build a
-                    sustainable environment and leave behind a better place for
-                    the future generations. Encouraging active participation and
-                    spreading hope that small changes do matter. Respecting,
-                    Observing and Understanding of Plants, Animals, Places and
-                    Culture. Getting knowledge and finding new ways to heal the
-                    planet.
-                  </p>
-                </div>
-
-                <!--group photo-->
-                <div class="flex items-center">
-                  <img src="./Home_and_Events/img/eren.jpg" class="rounded-md p-3" />
-                </div>
-              </div>
-            </div>
-          </div>
-        
-
-        <!--second half of the home page-->
-        <div id="facultyCont" class="bg-facultybgimg bg-cover bg-opacity-10 w-screen -mt-1">
-
-          <!--faculty container-->
-          <div class="flex flex-col items-center my-5 mx-6 bg-gray-100 bg-opacity-30 rounded-xl md:mx-10 mt-10">
-
-            <!--faculty coordinator heading-->
-            <div class="font-sanchez text-sm my-4 md:text-xl lg:text-3xl">Faculty Coordinator</div>
-
-            <!--madam photo and content-->
-            <div class="container flex flex-row">
-              <!--madam photo-->
-              <div class="flex items-center">
-                <img src="./Home_and_Events/img/eren.jpg" class="rounded-md p-3" />
-              </div>
-
-              <!--content-->
-              <div class="flex text-[7px] mr-0.5 md:text-sm lg:text-xl">
-                <p class="p-3">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Praesentium quos minima, provident ipsum doloremque asperiores
-                  deserunt alias facere sed, dignissimos exercitationem ea unde
-                  magnam natus aspernatur? Nostrum perspiciatis officiis
-                  explicabo Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut similique quam excepturi numquam maxime eligendi itaque dignissimos, iste autem, tenetur cupiditate illum optio laudantium? Suscipit excepturi obcaecati ipsa. Vitae, illum?
-                </p>
-              </div>
+            <!--group photo-->
+            <div class="flex items-center">
+              <img src="./Home_and_Events/img/eren.jpg" id="grouppic" class="px-4 w-100% h-50% object-fill" />
             </div>
           </div>
         </div>
       </div>
-      </div>
-    </section>
 
-    <!--footer section-->
-    <footer class="p-4 bg-white  shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800" style="background-color: #DAF7A6;">
-      <span class="text-sm text-black-500 sm:text-left dark:text-black-400 font-Sanchez font-medium"> CONTACT US<br>
-          Lenin Vasan (President) : +91 9876543210<br>
-  
-          Shubreeta Chatterjee (Vice President) : +91 9876543210<br>
-          <i class="fa-brands fa-github"></i>
-          <i class="fa-brands fa-square-instagram"></i>
-          <i class="fa-brands fa-linkedin"></i>
-          <i class="fa-brands fa-medium"></i>
-          <i class="fa-brands fa-youtube"></i>
-  
-  
-      </span>
-      <ul class="flex flex-wrap text-sm text-black-500 sm:text-right dark:text-black-400 font-Sanchez font-medium">
-          VIT Chennai<br>
-          Vandalur - Kelambakkam Road Chennai <br>
-          600 127 044 3993 1555
+
+      <!--second half of the home page-->
+      <div id="facultyCont" class="bg-facultybgimg bg-cover bg-opacity-10 w-screen -mt-1">
+
+        <!--faculty container-->
+        <div class="flex flex-col items-center my-5 mx-6 bg-gray-100 bg-opacity-30 rounded-xl md:mx-10 mt-10">
+
+          <!--faculty coordinator heading-->
+          <div class="font-sanchez text-sm my-4 md:text-xl lg:text-3xl">Faculty Coordinator</div>
+
+          <!--madam photo and content-->
+          <div class="container flex flex-row">
+            <!--madam photo-->
+            <div class="flex items-center">
+              <img src="./Home_and_Events/img/eren.jpg" class="rounded-md p-3" />
+            </div>
+
+            <!--content-->
+            <div class="flex text-[7px] mr-0.5 md:text-sm lg:text-xl">
+              <p class="p-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Praesentium quos minima, provident ipsum doloremque asperiores
+                deserunt alias facere sed, dignissimos exercitationem ea unde
+                magnam natus aspernatur? Nostrum perspiciatis officiis
+                explicabo Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut similique quam excepturi numquam
+                maxime eligendi itaque dignissimos, iste autem, tenetur cupiditate illum optio laudantium? Suscipit
+                excepturi obcaecati ipsa. Vitae, illum?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!--footer section-->
+  <footer class="p-4 bg-white  shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800"
+    style="background-color: #DAF7A6;">
+    <span class="text-sm text-black-500 sm:text-left dark:text-black-400 font-Sanchez font-medium"> CONTACT US<br>
+      Lenin Vasan (President) : +91 9876543210<br>
+      Shubreeta Chatterjee (Vice President) : +91 9876543210<br>
+      <div class="flex flex-row m-1 "></div>
+      <a href=""><i class="fa-brands fa-github fa-2x" id="icon"></i></a>
+      <a href=""><i class="fa-brands fa-square-instagram fa-2x"></i></a>
+      <a href=""><i class="fa-brands fa-linkedin fa-2x"></i></a>
+      <a href=""><i class="fa-brands fa-medium fa-2x"></i></a>
+      <a href=""><i class="fa-brands fa-youtube fa-2x"></i></a>
+
+
+    </span>
+    <ul class="flex flex-wrap text-sm text-black-500 sm:text-right dark:text-black-400 font-Sanchez font-medium">
+      VIT Chennai<br>
+      Vandalur - Kelambakkam Road Chennai <br>
+      600 127 044 3993 1555
   </footer>
   <div class="p-4 bg-gray shadow dark:bg-gray-800" style="background-color: #b8f645;">
-      <p class="text-sm text-black-500 sm:text-center dark:text-black-400 font-Sanchez font-medium ">
-          <p class="text-center">Developed by <a class="hover:underline" href="./Developer_page_cdn/developer_index.html">Biosphere Tech</a></p>
-      </p>
+    <p class="text-sm text-black-500 sm:text-center dark:text-black-400 font-Sanchez font-medium">
+      <p class="text-center">Developed by <a class="hover:underline" href="./Developer_page_cdn/developer_index.html">Biosphere Tech</a></p>
+    </p>
   </div>
-  </body>
+</body>
+
 </html>
+
+<!-- homepagebg md:homepagebgmd lg:homepagebglg xl:homepagebgxl xxl:homepagebgxxl -->
