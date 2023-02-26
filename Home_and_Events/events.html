@@ -119,18 +119,14 @@
         </li>
       </ul>
     </div>
-    <script>
-      const btn = document.querySelector("button.mobile-menu-button");
-      const menu = document.querySelector(".mobile-menu");
-
-      btn.addEventListener("click", () => {
-        menu.classList.toggle("hidden");
-      });
-    </script>
+    
   </nav>
 
   <!--Events Section-->
   <section id="events ">
+
+  <div class="flex flex-col">
+
     <div class="flex flex-col bg-lightyellow mt-1px">
       <div class="right flex place-content-end"><img src="./img/events_page/treeLeft.png" alt=""
           class="bg-lightyellow xl:w-[600px]"></div>
@@ -140,7 +136,7 @@
           class="bg-lightyellow xl:w-[600px]"></div>
     </div>
     <!--main container-->
-    <div class="flex flex-col items-center eventpagebg mt-10">
+    <div id="eventcont" class="flex flex-col items-center eventpagebg mt-10">
 
       <!--events heading-->
       <div class="text-xl my-2 font-sanchez md:text-3xl lg:text-4xl ">Events</div>
@@ -149,7 +145,7 @@
       <div class="container flex flex-col my-2">
 
         <!--event1 container-->
-        <div class="flex flex-col items-center my-5 bg-gray-100 mx-10 rounded-xl bg-opacity-50 lg:mx-20">
+        <div class="flex flex-col items-center my-5 bg-gray-100 mx-10 rounded-xl bg-opacity-50 lg:mx-20 hover:bg-opacity-70 hover:mx-5 transition-all duration-300">
 
           <!--event 1 heading-->
           <div class="font-sanchez text-sm my-3 md:text-lg">Event 1</div>
@@ -227,6 +223,7 @@
 
       </div>
     </div>
+  </div>
   </section>
 
   <!--Our team section-->
@@ -263,6 +260,18 @@
       <p class="text-center">Developed by <a class="hover:underline" href="../Developer_page_cdn/developer_index.html">Biosphere Tech</a></p>
     </p>
   </div>
+
+  <script>
+    const btn = document.querySelector("button.mobile-menu-button");
+    const menu = document.querySelector(".mobile-menu");
+    const eventcont = document.getElementById('eventcont'); 
+
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+      eventcont.classList.toggle('mt-48');
+    });
+  </script>
+
 </body>
 
 </html>
