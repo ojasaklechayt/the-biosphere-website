@@ -12,11 +12,6 @@
 	/* Firefox */
 }
 
-.container {
-	margin: 0;
-	overflow: hidden;
-	width: 100%;
-}
 
 .slider {
 	margin: 0;
@@ -43,34 +38,8 @@
 	height: 60%;
 }
 
-/* .slider {
-	  scrollbar-width: none;
-	  -ms-overflow-style: none;
-  }
-  .slider::-webkit-scrollbar { 
-	  width: 0;
-	  height: 0;
-  } */
 
-#left-arrow {
-	height: 100px;
-	width: 100px;
-}
 
-#right-arrow {
-	background-color: black;
-	height: 100px;
-	width: 100px;
-}
-
-/* .slider::-webkit-scrollbar {
-  display: none;
-}
-
-.slider {
-  -ms-overflow-style: none; 
-  scrollbar-width: none; 
-} */
 
 
 img:hover {
