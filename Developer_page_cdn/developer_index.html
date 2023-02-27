@@ -1,0 +1,305 @@
+<!-- Pranamya Rajashekhar -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                    sm: "480px",
+                    md: "768px",
+                    lg: "1024px",
+                    xl: "1440px",
+                    xxl: "1536px"
+                },
+                extend: {
+                    fontFamily: {
+                        poppins: ["Poppins"],
+                        sanchez: ["Sanchez"],
+                    },
+                    backgroundImage: {
+                        'waves': "url('/img/waves2.svg')"
+                    },
+                    colors: {
+                        lightViolet: 'hsl(211, 61%, 75%)',
+                        darkViolet: 'hsl(211, 61%, 35%)',
+                        cardColor: 'rgba(255, 255, 255, 0.60)',
+                        red: 'rgba(255,0,0,0)',
+                        blueish: "#459df6"
+                    },
+                },
+            },
+        };
+    </script>
+    <title>Document</title>
+    <link rel="stylesheet" href="src/main.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap');
+        @tailwind base;
+        @tailwind components;
+        @tailwind utilities;
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="bg-[#7fbdfb] sticky top-0 w-full z-10">
+        <div class="h-20 mx-auto px-4 flex justify-start items-center md:justify-center">
+            <div class="flex space-x-7">
+
+
+                <!-- Primary Navbar items -->
+
+                <div
+                    class="hidden flex md:flex md:flex-grow flex-row justify-center space-x-12 text-base lg:space-x-20 lg:text-2xl">
+                    <a href="../index.html"
+                        class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300 text-lg">Home</a>
+                    <a href="../Harsh Verma/events.html"
+                        class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300 text-lg">Events</a>
+                    <a href="../Our team/index.html"
+                        class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300 text-lg">Our
+                        Team</a>
+                    <a href="../Gallery/index.html"
+                        class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300 text-lg">Gallery</a>
+                </div>
+
+            </div>
+
+
+            <!-- Mobile menu button -->
+            <div class="md:hidden flex items-center">
+                <button class="outline-none mobile-menu-button">
+                    <svg class=" w-6 h-6 text-gray-500 hover:text-green-500 " x-show="!showMenu" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        </div>
+        <!-- mobile menu -->
+        <div class="hidden mobile-menu">
+            <ul class="flex flex-col space-y-5">
+                <li class="active"><a href="../index.html"
+                        class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300">Home</a>
+                </li>
+                <li><a href="../Harsh Verma/events.html"
+                        class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300">Events</a>
+                </li>
+                <li><a href="../Our team/index.html"
+                        class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300">Our
+                        Team</a></li>
+                <li><a href="../Gallery/index.html"
+                        class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300">Gallery</a>
+                </li>
+            </ul>
+        </div>
+        <script>
+            const btn = document.querySelector("button.mobile-menu-button");
+            const menu = document.querySelector(".mobile-menu");
+
+            btn.addEventListener("click", () => {
+                menu.classList.toggle("hidden");
+            });
+        </script>
+    </nav>
+    <div class="bg-lightViolet bg-waves">
+        <div class="flex text-4xl justify-center py-8 pb-10">
+            Website Developers
+        </div>
+        <div class="flex flex-col justify-center p-4 md:flex-col ">
+            <div class="flex flex-col gap-x-40 gap-y-20 justify-center m-8 md:flex-row">
+                <div
+                    class="flex flex-col bg-cardColor md:p-4 px-8 rounded-2xl justify-center group relative cursor-pointer items-center   overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+                    <img src="img/Navya Sharma.jpeg" alt="profile"
+                        class="rounded-[35px] p-2 w-60 h-60 object-cover transition-transform duration-500  group-hover:scale-125  ">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-b group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70 group-hover:scale-125 ">
+                    </div>
+
+
+                    <div
+                        class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-5 text-center transition-all duration-500 group-hover:translate-y-0">
+                        <p
+                            class=" mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                            Navya Sharma<br>
+                            Sr. Tech Lead</p>
+                    </div>
+
+                </div>
+                <div
+                    class="flex flex-col bg-cardColor md:p-4 px-8 rounded-2xl justify-center group relative cursor-pointer items-center   overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+                    <img src="img/Shaikh Rumman Fardeen.jpg" alt="profile"
+                        class="rounded-[35px] p-2 w-60 h-60 object-cover transition-transform duration-500  group-hover:scale-125 ">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-b group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70 group-hover:scale-125 ">
+                    </div>
+
+
+                    <div
+                        class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+                        <p
+                            class=" mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                            Shaikh Rumman Fardeen<br>
+                            Jr. Tech Lead</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="flex flex-col gap-x-40 gap-y-20 justify-center m-8 md:flex-row">
+                <div
+                    class="flex flex-col bg-cardColor md:p-4 px-8 rounded-2xl justify-center group relative cursor-pointer items-center   overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+                    <img src="img/Ojas Aklecha.JPG" alt="profile"
+                        class="rounded-[35px] p-2 w-60 h-60 object-cover transition-transform duration-500  group-hover:scale-125 ">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-b group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70 group-hover:scale-125 ">
+                    </div>
+
+                    <div
+                        class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+                        <p
+                            class=" mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                            Ojas Aklecha<br>
+                            Jr. Tech Lead</p>
+                    </div>
+
+                </div>
+                <div
+                    class="flex flex-col bg-cardColor md:p-4 px-8 rounded-2xl justify-center group relative cursor-pointer items-center   overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+                    <img src="img/Radhika Amar Desai.jpeg" alt="profile"
+                        class="rounded-[35px] p-2 w-60 h-60 object-cover transition-transform duration-500  group-hover:scale-125 ">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-b group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70 group-hover:scale-125 ">
+                    </div>
+
+
+                    <div
+                        class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+                        <p
+                            class=" mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                            Radhika Amar Desai<br>
+                            Developer</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="flex flex-col gap-x-40 gap-y-20 justify-center m-8 md:flex-row">
+                <div
+                    class="flex flex-col bg-cardColor md:p-4 px-8 rounded-2xl justify-center group relative cursor-pointer items-center   overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+                    <img src="img/Akshat Jain.jpg" alt="profile"
+                        class="rounded-[35px] p-2 w-60 h-60 object-cover transition-transform duration-500  group-hover:scale-125 ">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-b group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70 group-hover:scale-125 ">
+                    </div>
+
+
+                    <div
+                        class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+                        <p
+                            class=" mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                            Akshat Jain<br>
+                            Developer</p>
+                    </div>
+
+                </div>
+                <div
+                    class="flex flex-col bg-cardColor md:p-4 px-8 rounded-2xl justify-center group relative cursor-pointer items-center   overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+                    <img src="img/Harsh Verma.jpg" alt="profile"
+                        class="rounded-[35px] p-2 w-60 h-60 object-cover transition-transform duration-500  group-hover:scale-125 ">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-b group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70 group-hover:scale-125 ">
+                    </div>
+
+
+                    <div
+                        class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+                        <p
+                            class=" mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                            Harsh Verma<br>
+                            Developer</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="flex flex-col gap-x-40 gap-y-20 justify-center m-8 md:flex-row">
+                <div
+                    class="flex flex-col bg-cardColor md:p-4 px-8 rounded-2xl justify-center group relative cursor-pointer items-center   overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+                    <img src="img/Pranamya RK.jpg" alt="profile"
+                        class="rounded-[35px] p-2 w-60 h-60 object-cover transition-transform duration-500  group-hover:scale-125 ">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-b group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70 group-hover:scale-125 ">
+                    </div>
+
+                    <div
+                        class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+                        <p
+                            class=" mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                            Pranamya RK<br>
+                            Developer</p>
+                    </div>
+
+                </div>
+                <div
+                    class="flex flex-col bg-cardColor md:p-4 px-8 rounded-2xl justify-center group relative cursor-pointer items-center   overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+                    <img src="img/Pranav Abraham.jpg" alt="profile"
+                        class="rounded-[35px] p-2 w-60 h-60 object-cover transition-transform duration-500  group-hover:scale-125 ">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-b group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70 group-hover:scale-125 ">
+                    </div>
+
+
+                    <div
+                        class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+                        <p
+                            class=" mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                            Pranav Abraham<br>
+                            Developer</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!--footer section-->
+<footer class="p-4 bg-white flex shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800"
+    style="background-color: #459df6;">
+    <div class=" text-sm text-black-500 sm:text-left dark:text-black-400 font-Sanchez font-medium pt-8 -px-36"> Lenin
+        Vasan
+        (President) : +91 9876543210<br>
+
+        Shubreeta Chatterjee (Vice President) : +91 9876543210<br>
+
+        <i class="fa-brands fa-github"></i>
+        <i class="fa-brands fa-square-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-medium"></i>
+        <i class="fa-brands fa-youtube"></i>
+
+
+    </div>
+    <br>
+    <div class="text-lg text-black-500 sm:text-left dark:text-black-400 font-Sanchez self-start pb-20 "> CONTACT US
+    </div><br>
+
+    <div class=" flex flex-wrap text-sm text-black-500 sm:text-right dark:text-black-400 font-Sanchez font-medium pt-8">
+        VIT Chennai<br>
+        Vandalur - Kelambakkam Road Chennai <br>
+        600 127 044 3993 1555
+    </div>
+</footer>
+<div class="p-4 bg-gray shadow dark:bg-gray-800" style="background-color: #4845f6;">
+    <p class="text-sm text-black-500 sm:text-center dark:text-black-400 font-Sanchez font-medium ">
+        <a href="./developer_index.html">Developed by Biosphere Tech</a>
+    </p>
+</div>
+
+</html>
