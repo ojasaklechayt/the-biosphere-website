@@ -110,7 +110,7 @@
 
 <body>
   <!-- Navbar goes here -->
-  <nav class="bg-limegreen sticky top-0 w-full shadow-xl	">
+  <nav class="bg-limegreen sticky top-0 w-full	">
     <div class="h-20 mx-auto px-4 flex justify-start items-center md:justify-center">
       <div class="flex space-x-7">
 
@@ -123,7 +123,8 @@
             class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300 text-lg">Home</a>
           <a href="./Home_and_Events/events.html"
             class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300 text-lg">Events</a>
-          <a href="./Our team/index.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300 text-lg">Our
+          <a href="./Our team/index.html"
+            class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300 text-lg">Our
             Team</a>
           <a href="./Gallery/index.html"
             class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300 text-lg">Gallery</a>
@@ -152,7 +153,8 @@
         <li><a href="./Home_and_Events/events.html"
             class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300">Events</a>
         </li>
-        <li><a href="./Our team/index.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300">Our
+        <li><a href="./Our team/index.html"
+            class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300">Our
             Team</a></li>
         <li><a href="./Gallery/index.html"
             class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300">Gallery</a>
@@ -176,33 +178,31 @@
     <div class="container flex flex-col items-center max-w-full">
 
       <!--first half of the home page-->
-      <div id="" class="bg-bgcol flex flex-col items-center w-screen ">
+      <div id="" class="md:p-20 bg-bgcol flex flex-col items-center w-screen">
+          <!-- Biosphere Logo-->
+          <div class="py-7">
+            <img src="./Home_and_Events/img/Biosphere_Club.png" alt="" class="w-40 rounded-full bg-contain pt-3">
+          </div>
 
-        <!-- Biosphere Logo-->
-        <div class="py-7">
-          <img src="./Home_and_Events/img/106-1060448_earth-svg-download-earth-svg-doodle-of-the-earth-removebg-preview (1).png" alt="" class="w-40 rounded-full bg-contain pt-3">
-        </div>
+          <!--tagline-->
+          <div class="md:my-4 font-poppins md:text-xs font-medium md:text-2xl py-5">
+            195 Countries | 8 Billion People | 1 Planet
+          </div>
 
-        <!--tagline-->
-        <div class="my-3 font-poppins text-xs font-medium md:text-2xl py-5">
-          195 Countries | 8 Billion People | 1 Planet
-        </div>
-
-        <!-- main tagline-->
-        <div class="flex text-1xl py-3 font-poppins text-center mb-10 md:mx-28 md:text-4xl">
-          One Planet, One conscious decision to live in harmony
-        </div>
-
+          <!-- main tagline-->
+          <div class="flex text-2xl md:py-4 font-poppins text-center mb-10 md:mx-28 md:text-4xl">
+            One Planet, One conscious decision to live in harmony
+          </div>
         <!--about us-->
-        <div class="flex flex-col items-center my-10 bg-gray-100 mx-4 rounded-xl bg-opacity-70 md:mx-10">
+        <div class="flex flex-col items-center my-10 md:my-56 bg-gray-100 mx-4 rounded-xl bg-opacity-70 md:mx-10">
           <!--About us heading-->
           <div class="font-sanchez my-10 md:text-xl lg:text-3xl">About Us</div>
 
           <!--group photo and content-->
           <div class="container flex flex-col-reverse items-center">
             <!--content-->
-            <div class="flex text-[7px] mr-0.5 md:text-sm lg:text-xl">
-              <p class="px-7 py-6">
+            <div class="flex text-[7px] mx-8 md:text-sm lg:text-xl">
+              <p class="px-7 py-6 text-justify">
                 We created our club with the vision to create awareness
                 among people and make impact by realizing how real the
                 global warming and climate changes are. Join us to build a
@@ -216,8 +216,8 @@
             </div>
 
             <!--group photo-->
-            <div class="flex items-center">
-              <img src="./Home_and_Events/img/eren.jpg" id="grouppic" class="px-4 w-100% h-50% object-fill" />
+            <div class="flex items-center" style="display: flex; align-items: center; justify-content: center;">
+              <img src="./Home_and_Events/img/grp.jpg" id="grouppic" class="px-4 object-cover" style="height: auto; width: 60%;" />
             </div>
           </div>
         </div>
@@ -225,24 +225,24 @@
 
 
       <!--second half of the home page-->
-      <div id="facultyCont" class="bg-facultybgimg bg-cover bg-opacity-10 w-screen -mt-1">
+      <div id="facultyCont" class="py-24 bg-facultybgimg bg-cover bg-opacity-10 w-screen -mt-1">
 
         <!--faculty container-->
         <div class="flex flex-col items-center my-5 mx-6 bg-gray-100 bg-opacity-30 rounded-xl md:mx-10 mt-10">
 
           <!--faculty coordinator heading-->
-          <div class="font-sanchez text-sm my-4 md:text-xl lg:text-3xl">Faculty Coordinator</div>
+          <div class="font-sanchez text-base my-4 md:text-xl lg:text-3xl">Faculty Coordinator</div>
 
           <!--madam photo and content-->
-          <div class="container flex flex-col justify-center items-center md:flex-row">
+          <div class=" px-4 container flex flex-col justify-center items-center gap-1 md:gap-3 md:flex-row">
             <!--madam photo-->
-            <div class="flex items-center">
-              <img src="./Home_and_Events/img/eren.jpg" class="rounded-md p-3" />
+            <div class="flex items-center" style="display: flex; align-items: center; justify-content: center;">
+              <img src="./Home_and_Events/img/maam2.jpg" class="rounded-md p-3" style="height: auto; width: 60%;" />
             </div>
 
             <!--content-->
             <div class="flex text-[7px] mr-0.5 md:text-sm lg:text-xl">
-              <p class="p-3">
+              <p class="p-3 text-justify text-sm md:text-lg">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Praesentium quos minima, provident ipsum doloremque asperiores
                 deserunt alias facere sed, dignissimos exercitationem ea unde
@@ -281,7 +281,8 @@
   </footer>
   <div class="p-4 bg-gray shadow dark:bg-gray-800" style="background-color: #b8f645;">
     <p class="text-sm text-black-500 sm:text-center dark:text-black-400 font-Sanchez font-medium">
-      <p class="text-center">Developed by <a class="hover:underline" href="./Developer_page_cdn/developer_index.html">Biosphere Tech</a></p>
+    <p class="text-center">Developed by <a class="hover:underline"
+        href="./Developer_page_cdn/developer_index.html">Biosphere Tech</a></p>
     </p>
   </div>
 </body>
