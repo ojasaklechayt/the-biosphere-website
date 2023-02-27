@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Biosphere Club</title>
+
+  <!--Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Sanchez&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!--External CSS-->
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <!--Tailwind config-->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        screens: {
+          sm: "480px",
+          md: "768px",
+          lg: "1024px",
+          xl: "1440px",
+          xxl: "1536px"
+        },
+        extend: {
+          fontFamily: {
+            poppins: ["Poppins"],
+            sanchez: ["Sanchez"],
+          },
+          backgroundImage: {
+            homepageimg:
+              "url('./img/106-1060448_earth-svg-download-earth-svg-doodle-of-the-earth-removebg-preview.png')",
+            facultybgimg: "url('./img/abstractleaf-real_adobe_express.svg')",
+            eventbgimg: "url('./img/events_page/eventbgimg.png')"
+          },
+          colors: {
+            limegreen: "#f0f983",
+            lightyellow: "#ECF7A6"
+          },
+        },
+      },
+    };
+  </script>
+
+  <!--Custom CSS-->
+  <style type="text/tailwindcss">
+    @layer utilities {
+          .eventpagebg{
+              position:absolute;
+              top:50px;
+          }
+          
+          .right{
+              position: relative;
+              left:0px;
+          }
+
+          .left{
+              position: relative;
+              right:70px;
+          }
+
+        }
+      </style>
+
+</head>
+
+<body>
+  <!-- Navbar goes here -->
+  <nav class="bg-limegreen sticky top-0 w-full z-10">
+    <div class="h-20 mx-auto px-4 flex justify-start items-center md:justify-center">
+      <div class="flex space-x-7">
+
+
+        <!-- Primary Navbar items -->
+
+        <div
+          class="hidden flex md:flex md:flex-grow flex-row justify-center space-x-12 text-base lg:space-x-20 lg:text-2xl">
+          <a href="../index.html"
+            class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300 text-lg">Home</a>
+          <a href="./events.html"
+            class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300 text-lg">Events</a>
+          <a href="../Our team/index.html"
+            class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300 text-lg">Our
+            Team</a>
+          <a href="../Gallery/index.html"
+            class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300 text-lg">Gallery</a>
+        </div>
+
+      </div>
+
+
+      <!-- Mobile menu button -->
+      <div class="md:hidden flex items-center">
+        <button class="outline-none mobile-menu-button">
+          <svg class=" w-6 h-6 text-gray-500 hover:text-green-500 " x-show="!showMenu" fill="none"
+            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+            <path d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    </div>
+    <!-- mobile menu -->
+    <div class="hidden mobile-menu">
+      <ul class="flex flex-col space-y-5">
+        <li class="active"><a href="../index.html"
+            class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300">Home</a>
+        </li>
+        <li><a href="./events.html"
+            class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300">Events</a>
+        </li>
+        <li><a href="../Our team/index.html"
+            class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300">Our
+            Team</a></li>
+        <li><a href="../Gallery/index.html"
+            class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300">Gallery</a>
+        </li>
+      </ul>
+    </div>
+    <script>
+      const btn = document.querySelector("button.mobile-menu-button");
+      const menu = document.querySelector(".mobile-menu");
+
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
+  </nav>
+
+  <!--Events Section-->
+  <section id="events">
+    <div class="flex flex-col bg-lightyellow mt-1px">
+      <div class="right flex place-content-end"><img src="./img/events_page/treeLeft.png" alt=""
+          class="bg-lightyellow xl:w-[600px]"></div>
+      <div class="left flex place-content-start"><img src="./img/events_page/treeRight.png" alt=""
+          class="bg-lightyellow xl:w-[600px]"></div>
+      <div class="right flex place-content-end md:hidden"><img src="./img/events_page/treeLeft.png" alt=""
+          class="bg-lightyellow xl:w-[600px] md:hidden"></div>
+      <div class="left flex place-content-start md:hidden"><img src="./img/events_page/treeRight.png" alt=""
+          class="bg-lightyellow xl:w-[600px] md:hidden"></div>
+    </div>
+    <!--main container-->
+    <div class="flex flex-col justify-center items-center eventpagebg mt-10">
+
+      <!--events heading-->
+      <div class="text-xl my-2 font-sanchez md:text-3xl lg:text-4xl ">Events</div>
+
+      <!--events container-->
+      <div class="container flex flex-col my-2">
+
+        <!--event1 container-->
+        <div class="flex flex-col items-center my-5 bg-gray-100 mx-10 rounded-xl bg-opacity-50 lg:mx-20">
+
+          <!--event 1 heading-->
+          <div class="font-sanchez text-base my-3 md:text-2xl">D-ECO-DE</div>
+
+          <!--event photo and content-->
+          <div class="container flex flex-col md:flex-row">
+            <!--event photo-->
+            <div class="flex items-center">
+              <img src="./img/events_page/1158178_1959-removebg-preview_adobe_express-removebg-preview.png"
+                class="rounded-md p-3" />
+            </div>
+
+            <!--content-->
+            <div class="flex text-xs mr-0.5 md:text-lg">
+              <p class="p-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Praesentium quos minima, provident ipsum doloremque asperiores
+                deserunt alias facere sed, dignissimos exercitationem ea unde
+                magnam natus aspernatur? Nostrum perspiciatis officiis
+                explicabo.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!--event 2 container-->
+        <div class="flex flex-col items-center my-5 bg-gray-100 mx-10 rounded-xl bg-opacity-50 lg:mx-20">
+          <!--event 2 heading-->
+          <div class="font-sanchez text-base my-3 md:text-2xl">Expo 2023</div>
+
+          <!--event photo and content-->
+          <div class="container flex flex-col-reverse md:flex-row">
+
+            <!--content-->
+            <div class="flex text-xs ml-0.5 md:text-lg">
+              <p class="p-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Praesentium quos minima, provident ipsum doloremque asperiores
+                deserunt alias facere sed, dignissimos exercitationem ea unde
+                magnam natus aspernatur? Nostrum perspiciatis officiis
+                explicabo.
+              </p>
+            </div>
+
+            <!--event photo-->
+            <div class="flex items-center">
+              <img src="./img/events_page/1158178_1959-removebg-preview_adobe_express-removebg-preview.png"
+                class="rounded-md p-3" />
+            </div>
+          </div>
+        </div>
+
+        <!--event 3 container-->
+        <div class="flex flex-col items-center my-5 bg-gray-100 mx-10 rounded-xl bg-opacity-50 lg:mx-20">
+          <!--event 3 heading-->
+          <div class="font-sanchez text-base my-3 md:text-2xl">Wildlife Fiesta</div>
+
+          <!--event photo and content-->
+          <div class="flex flex-col md:flex-row">
+            <!--event photo-->
+            <div class="flex items-center">
+              <img src="./img/events_page/1158178_1959-removebg-preview_adobe_express-removebg-preview.png"
+                class="rounded-md p-3" />
+            </div>
+
+            <!--content-->
+            <div class="flex text-xs mr-0.5 md:text-lg">
+              <p class="p-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Praesentium quos minima, provident ipsum doloremque asperiores
+                deserunt alias facere sed, dignissimos exercitationem ea unde
+                magnam natus aspernatur? Nostrum perspiciatis officiis
+                explicabo.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--footer section-->
+  <footer class="p-4 bg-white flex shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800"
+    style="background-color: #DAF7A6;">
+    <div class=" text-sm text-black-500 sm:text-left dark:text-black-400 font-Sanchez font-medium pt-8 -px-36"> Lenin Vasan
+      (President) : +91 9876543210<br>
+
+      Shubreeta Chatterjee (Vice President) : +91 9876543210<br>
+
+      <i class="fa-brands fa-github"></i>
+      <i class="fa-brands fa-square-instagram"></i>
+      <i class="fa-brands fa-linkedin"></i>
+      <i class="fa-brands fa-medium"></i>
+      <i class="fa-brands fa-youtube"></i>
+
+
+    </div>
+    <br>
+    <div class="text-lg text-black-500 sm:text-left dark:text-black-400 font-Sanchez self-start pb-20 "> CONTACT US
+    </div><br>
+
+    <div class=" flex flex-wrap text-sm text-black-500 sm:text-right dark:text-black-400 font-Sanchez font-medium pt-8">
+      VIT Chennai<br>
+      Vandalur - Kelambakkam Road Chennai <br>
+      600 127 044 3993 1555
+    </div>
+  </footer>
+  <div class="p-4 bg-gray shadow dark:bg-gray-800" style="background-color: #b8f645;">
+    <p class="text-sm text-black-500 sm:text-center dark:text-black-400 font-Sanchez font-medium ">
+      <a href="../Developer_page_cdn/developer_index.html">Developed by Biosphere Tech</a>
+    </p>
+  </div>
+</body>
+
+</html>
