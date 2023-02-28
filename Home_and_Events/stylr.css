@@ -1,0 +1,6 @@
+@media only screen and (max-width: 768px) {
+    #grouppic {
+        height: auto;
+        width: 80%;
+    }
+}
