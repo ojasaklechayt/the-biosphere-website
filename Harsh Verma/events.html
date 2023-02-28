@@ -127,14 +127,6 @@
         </li>
       </ul>
     </div>
-    <script>
-      const btn = document.querySelector("button.mobile-menu-button");
-      const menu = document.querySelector(".mobile-menu");
-
-      btn.addEventListener("click", () => {
-        menu.classList.toggle("hidden");
-      });
-    </script>
   </nav>
 
   <!--Events Section-->
@@ -150,7 +142,7 @@
           class="bg-lightyellow xl:w-[600px] md:hidden"></div>
     </div>
     <!--main container-->
-    <div class="flex flex-col justify-center items-center eventpagebg mt-10">
+    <div id="eventContainer" class="container max-w-full flex flex-col justify-center items-center eventpagebg mt-10">
 
       <!--events heading-->
       <div class="text-xl my-2 font-sanchez md:text-3xl lg:text-4xl ">Events</div>
@@ -300,6 +292,21 @@
     </div>
   </div>
 
+  <script>
+
+    //for navbar
+    const btn = document.querySelector("button.mobile-menu-button");
+    const menu = document.querySelector(".mobile-menu");
+
+    //for down padding to events page when navbar opens
+    const eventcont = document.getElementById('eventContainer');
+    
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+      eventcont.classList.toggle("mt-48");
+    });
+
+  </script>
 
 </body>
 
