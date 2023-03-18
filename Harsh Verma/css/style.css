@@ -1,0 +1,142 @@
+/*Footer*/
+.footer {
+      background-color: #dbf087;
+      padding-top: 50px;
+      font-family: "Poppins", serif;
+}
+
+footer {
+      display: block;
+}
+
+.footer-container {
+      max-width: 1170px;
+      margin: auto;
+}
+
+div {
+      display: block;
+}
+
+.footer-row {
+      display: flex;
+      flex-wrap: wrap;
+}
+
+.footer-col {
+      width: 50%;
+      padding: 0 15px;
+      margin-bottom: 80px;
+      padding-left: 50px;
+}
+
+.footer-col h4 {
+      font-size: 18px;
+      color: black;
+      position: relative;
+      margin-bottom: 35px;
+}
+
+h4 {
+      display: block;
+      margin-block-start: 1.33em;
+      margin-block-end: 1.33em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      font-weight: bold;
+}
+
+.footer-col h4::before {
+      content: "";
+      position: absolute;
+      left: 0px;
+      bottom: -10px;
+      height: 2px;
+      box-sizing: border-box;
+      width: 50px;
+      background-color: black;
+}
+
+.footer-col p {
+      color: black;
+      font-size: 15px;
+}
+
+footer p {
+      display: block;
+      margin-block-start: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+}
+
+.fa {
+      display: inline-block;
+      font: normal normal normal 14px/1 FontAwesome;
+      font-size: inherit;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-map-marker:before {
+      content: "\f041";
+}
+
+.fa-envelope:before {
+      content: "\f0e0";
+}
+
+.fa-phone:before {
+      content: "\f095";
+}
+
+.fa-map-marker:before {
+      content: "\f041";
+}
+
+.footer-col .social a {
+      padding-top: 2px;
+      display: inline-block;
+      height: 40px;
+      width: 40px;
+      margin: 0 10px 10px 0;
+      text-align: center;
+      line-height: 40px;
+      border-radius: 50%;
+      color: black;
+      transition: all 0.5s ease;
+}
+
+
+
+/*Tech-Team*/
+.bottom {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      background-color: #C6E78B;
+}
+
+.bottom-text {
+      color: black;
+}
+
+.bottom-text a {
+      color: black;
+      text-decoration: none;
+}
+
+.bottom-text a:hover {
+      color: #1d4726fa;
+      text-decoration: underline;
+}
+
+.bottom-text p {
+      font-size: 15px;
+      margin: 10px;
+      font-family: "Poppins", sans-serif;
+}
+
+.gap {
+      margin: 5px;
+}
