@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sanchez&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            sm: "480px",
+            md: "768px",
+            lg: "976px",
+            xl: "1440px",
+          },
+          extend: {
+            fontFamily: {
+              poppins: ["Poppins"],
+              sanchez: ["Sanchez"],
+            },
+            backgroundImage: {
+              homepageimg:
+                "url('./img/106-1060448_earth-svg-download-earth-svg-doodle-of-the-earth-removebg-preview.png')",
+              facultybgimg: "url('./img/abstractleaf-real_adobe_express.svg')",
+            },
+            colors: {
+              homepage: "#DAF7A6",
+              eventspage:"#ECF7A6",
+              white:"#ffffff"
+            },
+          },
+        },
+      };
+    </script>
+<body>
+    <div class="container flex flex-col items-center bg-homepage max-w-full bg-homepageimg">
+        <div class="logo">
+            <img src="./img/106-1060448_earth-svg-download-earth-svg-doodle-of-the-earth-removebg-preview.png" alt="" class="w-50 rounded-full bg-contain">
+        </div>
+        <div class="flex flex-row justify-center mx-auto my-5 	">
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <div class="flex flex-row justify-center mx-auto my-5 	">
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <div class="w-5/6 h-1/2 bg-white py-2 mb-10 bg-opacity-40 hover:bg-opacity-60">
+            <div class="flex flex-row justify-center mt-10 text-xl">About us</div>
+            <div class="flex flex-row space-x-8">
+                <div class="flex justify-center items-center px-10 w-1/2 text-xl text-left">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error voluptatem incidunt culpa. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae corporis mollitia praesentium, quam optio enim deserunt eius facilis! Qui explicabo error quo temporibus suscipit, itaque voluptatibus, molestias eos tempora incidunt hic recusandae reprehenderit ut!</p>
+                </div>
+                <div class="">
+                    <img src="./img/106-1060448_earth-svg-download-earth-svg-doodle-of-the-earth-removebg-preview.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

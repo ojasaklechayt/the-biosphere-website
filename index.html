@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./footer.css">
+
+  <!-- CDN -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!--Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Sanchez&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./Home_and_Events/stylr.css">
+
+  <!--Custom CSS-->
+  <style type="text/tailwindcss">
+    @layer utilities {
+        .homepagebg{
+            background: url('./Home_and_Events/img/cutearth-removebg-preview.png') no-repeat center center/cover;
+            background-color: #DAF7A6 ;
+            position: relative;
+            background-size: cover;
+            
+        }
+
+        .homepagebgmd{
+            background: url('./Home_and_Events/img/cutearth-removebg-preview.png') no-repeat center center/cover;
+            background-color: #DAF7A6 ;
+            position: relative;
+            background-size: cover;
+           
+        }
+
+        .homepagebglg{
+            background: url('./Home_and_Events/img/cutearth-removebg-preview.png') no-repeat center center/cover;
+            background-color: #d4e8b0 ;
+            position: relative;
+            background-size: cover;
+            
+        }
+
+        .homepagebgxl{
+            background: url('./Home_and_Events/img/cutearth-removebg-preview.png') no-repeat center center/cover;
+            background-color: #DAF7A6 ;
+            position: relative;
+            background-size: cover;
+        }
+
+        .homepagebgxxl{
+            background: url('./Home_and_Events/img/cutearth-removebg-preview.png') no-repeat center center/cover;
+            background-color: #DAF7A6 ;
+            position: relative;
+            background-size: cover;
+        }
+
+      }
+    </style>
+
+  <!--Tailwind config-->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        screens: {
+          sm: "480px",
+          md: "768px",
+          lg: "1024px",
+          xl: "1440px",
+          xxl: "1536px"
+        },
+        backgroundSize: {
+          'auto': 'auto',
+          'cover': 'cover',
+          'contain': 'contain',
+          '50%': '50%',
+          '16': '4rem',
+        },
+        extend: {
+          fontFamily: {
+            poppins: ["Poppins"],
+            sanchez: ["Sanchez"],
+          },
+          backgroundImage: {
+            homepageimg:
+              "url('./Home_and_Events/img/106-1060448_earth-svg-download-earth-svg-doodle-of-the-earth-removebg-preview1.png')",
+            facultybgimg: "url('./Home_and_Events/img/abstractleaf-real_adobe_express1.svg')",
+          },
+          colors: {
+            limegreen: "#DAF7A6",
+            lightyellow: "#ECF7A6",
+            footer1: "#DAF7A6",
+            footer2: "#C6E78B",
+            bgcol: "#d4e8b0"
+          },
+        },
+      },
+    };
+  </script>
+
+  <title>Home | The Biosphere Club</title>
+</head>
+
+<body>
+  <!-- Navbar goes here -->
+  <nav class="bg-limegreen sticky top-0 w-full shadow-md	">
+    <div class="h-20 mx-auto px-4 flex justify-start items-center md:justify-center">
+      <div class="flex space-x-7">
+
+
+        <!-- Primary Navbar items -->
+
+        <div
+          class="hidden flex md:flex md:flex-grow flex-row justify-center space-x-12 text-base lg:space-x-20 lg:text-2xl">
+          <a href="./index.html"
+            class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300 text-lg">Home</a>
+          <a href="./Harsh Verma/events.html"
+            class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300 text-lg">Events</a>
+          <a href="./Our team/index.html"
+            class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300 text-lg">Our
+            Team</a>
+          <a href="./Gallery/index.html"
+            class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300 text-lg">Gallery</a>
+        </div>
+
+      </div>
+
+
+      <!-- Mobile menu button -->
+      <div class="md:hidden flex items-center">
+        <button class="outline-none mobile-menu-button">
+          <svg class=" w-6 h-6 text-gray-500 hover:text-green-500 " x-show="!showMenu" fill="none"
+            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+            <path d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    </div>
+    <!-- mobile menu -->
+    <div class="hidden mobile-menu">
+      <ul class="flex flex-col space-y-5">
+        <li class="active"><a href="./index.html"
+            class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300">Home</a>
+        </li>
+        <li><a href="./Harsh Verma/events.html"
+            class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300">Events</a>
+        </li>
+        <li><a href="./Our team/index.html"
+            class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300">Our
+            Team</a></li>
+        <li><a href="./Gallery/index.html"
+            class="py-4 px-2 text-gray-500 font-semibold hover:text-black transition duration-300">Gallery</a>
+        </li>
+      </ul>
+    </div>
+    <script>
+      const btn = document.querySelector("button.mobile-menu-button");
+      const menu = document.querySelector(".mobile-menu");
+
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
+  </nav>
+
+  <!--Home Section-->
+  <section id="home">
+
+    <!--Container of the home page-->
+    <div class="container flex flex-col items-center max-w-full">
+
+      <!--first half of the home page-->
+      <div id="" class="md:p-20 bg-bgcol flex flex-col items-center w-screen">
+        <!-- Biosphere Logo-->
+        <div class="py-7">
+          <img src="./Home_and_Events/img/Biosphere_Club.png" alt="" class="w-40 rounded-full bg-contain pt-3">
+        </div>
+
+        <!--tagline-->
+        <div class="md:my-4 font-poppins font-medium md:text-2xl py-5">
+          195 Countries | 8 Billion People | 1 Planet
+        </div>
+
+        <!-- main tagline-->
+        <div class="flex text-2xl md:py-4 font-poppins text-center mb-10 md:mx-28 md:text-4xl">
+          One Planet, One conscious decision to live in harmony
+        </div>
+        <!--about us-->
+        <div class="flex flex-col items-center my-10 md:my-56 bg-gray-100 mx-4 rounded-xl bg-opacity-70 md:mx-10">
+          <!--About us heading-->
+          <div class="font-sanchez text-[30px] my-10 md:text-xl lg:text-3xl">About Us</div>
+
+          <!--group photo and content-->
+          <div class="container flex flex-col-reverse items-center">
+            <!--content-->
+            <div class="flex text-[15px] mx-8 md:text-sm lg:text-xl">
+              <p class="px-7 py-6 text-center md:text-justify">
+                We created our club with the vision to create awareness
+                among people and make impact by realizing how real the
+                global warming and climate changes are. Join us to build a
+                sustainable environment and leave behind a better place for
+                the future generations. Encouraging active participation and
+                spreading hope that small changes do matter. Respecting,
+                Observing and Understanding of Plants, Animals, Places and
+                Culture. Getting knowledge and finding new ways to heal the
+                planet.
+              </p>
+            </div>
+
+            <!--group photo-->
+            <div class="flex items-center" style="display: flex; align-items: center; justify-content: center;">
+              <img src="./Home_and_Events/img/grp.jpg" id="grouppic" class="px-4 object-cover"
+                style="height: auto; width: 75%; border-radius:50px;" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!--second half of the home page-->
+      <div id="facultyCont" class="py-24 bg-facultybgimg bg-cover bg-opacity-10 w-screen -mt-1">
+
+        <!--faculty container-->
+        <div class="flex flex-col items-center my-5 mx-6 bg-gray-100 bg-opacity-30 rounded-xl md:mx-10 mt-10">
+
+          <!--faculty coordinator heading-->
+          <div class="font-sanchez text-base my-4 md:text-xl lg:text-3xl">Faculty Coordinator</div>
+
+          <!--madam photo and content-->
+          <div class=" px-4 container flex flex-col justify-center items-center gap-1 md:gap-3 md:flex-row">
+            <!--madam photo-->
+            <div class="flex items-center" style="display: flex; align-items: center; justify-content: center; padding-bottom: 50px;">
+              <img src="./Home_and_Events/img/maam2.jpg" class="rounded-md p-3" style="height: auto; width: 60%; border-radius: 50px;" />
+            </div>
+
+            <!--content-->
+            <div class="flex text-[7px] mr-0.5 md:text-sm lg:text-xl">
+              <p class="p-3 text-justify text-sm md:text-lg font-medium">
+                Dr. Umayal C, apart from being a professor from School of Electrical Engineering, Vellore Institute of
+                Technology, Chennai, is very interested in the field of environment too, and it is with this interest
+                that ma'am has joined the Biosphere Club. Apart from working on the environment, ma'am also guides the
+                club and its members as the faculty coordinator of the club.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!--Footer-->
+  <footer class="footer" id="index">
+    <div class="footer-container">
+      <div class="footer-row">
+        <div class="footer-col" id="contact">
+          <h4>CONTACT US</h4>
+          <p>
+            <span class="fa fa-map-marker"></span> Vellore Institute of
+            Technology Chennai Campus, Vandalur Kelambakkam Road Chennai Tamil
+            Nadu: 600127
+          </p>
+          <br />
+          <p><span class="fa fa-envelope"></span> biospherevitcc@gmail.com</p>
+          <br />
+        </div>
+
+        <div class="footer-col">
+          <h4>FOLLOW US</h4>
+          <div class="social">
+            <a href="https://www.instagram.com/biosphere_club_vitcc" target="_blank"><svg
+                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
+                </path>
+              </svg></a>
+            <a href="https://www.linkedin.com/company/biosphere-club/" target="_blank"><svg
+                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin"
+                viewBox="0 0 16 16">
+                <path
+                  d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z">
+                </path>
+              </svg></a>
+            <a href="hhttps://www.youtube.com/@biospherevitcc5017" target="_blank"><svg
+                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin"
+                viewBox="0 0 16 16"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                  <path
+                    d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" />
+                </svg></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="bottom">
+    <div class="bottom-text">
+      <p>
+        Created by <a href="../Developer_page_cdn/developer_index.html"><span class="gap">Biosphere Web Dev
+            Team</span></a><span class="gap">|</span><span class="gap">2023</span>
+      </p>
+    </div>
+  </div>
+
+</body>
+
+</html>
+
+<!-- homepagebg md:homepagebgmd lg:homepagebglg xl:homepagebgxl xxl:homepagebgxxl -->
